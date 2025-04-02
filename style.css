@@ -1,0 +1,100 @@
+/* 
+|================================================================================|
+|                                                                                |
+|                                 Imports                                        |
+|                                                                                |
+|================================================================================| 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* 
+|================================================================================|
+|                                                                                |
+|                                 Elements                                       |
+|                                                                                |
+|================================================================================| 
+*/
+
+p{
+    font-size: 1.6rem;
+}
+
+li{
+    list-style-position: inside;
+}
+
+section{
+    text-align: center;
+    padding: 10px;
+}
+
+section:nth-child(odd){
+    background-color:#c6d4b6;
+}
+
+section:nth-child(even){
+    background-color: #FFFAE3;
+}
+
+header{
+    background-color: #1B2F1D;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: #FFFAE3;
+}
+
+header h1{
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9rem;
+    color: #FFFAE3;
+    text-shadow: 2px 2px 2px #73944e;
+}
+
+
+nav{
+    margin-top: 20px;
+    min-height: 4vh;
+    background-color: #1C2321;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    color: #c6d4b6;
+    font-size: 2rem;
+}
+
+nav a:hover{
+    color: #73944e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 
+|================================================================================|
+|                                                                                |
+|                              Custom Classes                                    |
+|                                                                                |
+|================================================================================| 
+*/
+
+.highlight{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* 
+|================================================================================|
+|                                                                                |
+|                                 Bootstrap                                      |
+|                                                                                |
+|================================================================================| 
+*/
+
+.carousel-caption-ammend {
+    background-color: rgba(0, 0, 0, 0.7);
+}

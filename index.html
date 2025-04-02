@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Kitchen Assignment</h1>
+        <h2> Unity for Impact Course - 2025 - Katy Long </h2>
+        <nav>
+            <a>Introduction</a>
+            <a>Gallery</a>
+            <a>Evaluation</a>
+            <a>Further Work</a>
+            <a>Lessons</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Introduction</h2>
+        <p class="highlight">"Using the prefabs you created in the course, build a kitchen layout of
+            your own design"</p>
+            <p> We were tasked with creating a kitchen layout, similar to the guided session. While I have done some programming, visuals, scene building, and navigating 3D elements were new to me. To take away the design element so I could focus on the practical skills, I chose to try and recreate my own home kitchen as closely as I could. I tried to recreate my kitchen to scale, using floorplan measurements, but there were some limitations to what I could achieve based on the prefabs / models I had access to, and my current knowledge of Unity. The images shown have walls missing you you can see from different angels, so some backs of models are exposed.</p>
+    </section>
+    <section>
+        <h2>Gallery</h2>
+
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="images/kitchen_estate_agent.jpg"
+                            alt="A corner of a kitchen with a small bar, a microwave on top of a washing machine, and a slight view of a short fridge."
+                            style="width:100%;">
+                        <div class="carousel-caption carousel-caption-ammend">
+                            <h3>My Kitchen (via Rightmove)</h3>
+                            <p>This image is taken from the estate agent images when we bought it</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/kitchen_estate_agent2.jpg"
+                            alt="A view of a kitchen from the other angel, showing white cabinets with black surfaces, a built-in oven, and a small stainless-steel sink"
+                            style="width:100%;">
+                        <div class="carousel-caption carousel-caption-ammend">
+                            <h3>My Kitchen (via Rightmove)</h3>
+                            <p>This image is taken from the estate agent images when we bought it</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/bar_and_long_wall.png" alt="A 3D render of a kitchen showing a small breakfast bar, a built-in oven, and some cupboards" style="width:100%;">
+                        <div class="carousel-caption carousel-caption-ammend">
+                            <h3>Bar View</h3>
+                            <p>I managed to match some of the detail of my kitchen here, but I struggled with alignment.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/render.png" alt="A 3d render of the kitchen showing the oven, oven hood, hob, and storage cupboards" style="width:100%;">
+                        <div class="carousel-caption carousel-caption-ammend">
+                            <h3>Oven View</h3>
+                            <p>I like the tiles, though the black tiles should reach right under the kitchen hood. I couldn't work out how to do this and keep the tiles scaled.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/side_view.png" alt="A 3D render of the kitchen showing the washing machine and dishwasher" style="width:100%;">
+                        <div class="carousel-caption carousel-caption-ammend">
+                            <h3>Utilities</h3>
+                            <p>I found it very difficult to source a free washing machine model. There was one, but you couldn't seem to add materials to different parts of it. I have put a sphere on the dishwasher model for now, and will replace.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/heirarchy.png" alt="A image of the Unity heirarchy screen, showing how the gameobjects are structured" style="width:100%;">
+                        <div class="carousel-caption carousel-caption-ammend">
+                            <h3>Hierarchy</h3>
+                            <p>The hierarchy was helpful for keeping my game objects organised. Some things - like the "window wall" were made up of many cubes. Keeping them all in a parent object made it easier to apply changes to the whole wall in one go!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section><h2>Evaluation</h2>
+        <p> While I know this isn't good, I'm very pleased with it. As my first effort in working in a 3D space, and creating a recognisable scene, I think I've done a good job. Most people who have been in my kitchen recognised the 3D version! Colours and general placement of prefabs matched my kitchen well - and while there are inaccuracies, they're not terribly jarring!</p>
+        <p> I think I used the materials and colours well. We set up a lot of them in the lesson, though I modified some (like the granite) to match my kitchen a bit more. I also brought in some others from a resource Keith shared, but I'm not sure I used them. I found working with the materials and textures of some prefabs a bit confusing, but I think I got there in the end!</p>
+        <p>There are many improvements to be made - but I won't be overly critical with the knowledge this is my first try. There are some gaps and alignment issues that I couldn't quite iron out. I also think the scale isn't quite right, though it's not too far off. (My kitchen is very small). I think there are some inconsistencies with the models used. For example, the surfaces and cupboard look quite real, while the kettle is obviously a lower poly model, and this is quite clashy.</p>
+    </section>
+    <section>
+        <h2> Further Work</h2>
+        <p> With more time, I would like to:</p>
+        <ul>
+            <li>Add more decorations to the scene to make it look more lived in</li>
+            <li>Source or create a proper window. The current window is made of many cubes, and I don't think this is a good approach</li>
+            <li>Fix the tiles so they reflect the actual kitchen. They stop too soon, and are too rectangular.</li>
+        </ul>
+    </section>
+    <section><h2>Lessons / Takeaways</h2>>
+        <p> My biggest take away from the project is how difficult I found navigating the 3D space to be. Placing and aligning objects seems very difficult, even with snapping. A surface could look quite well placed from on angle, and the a rotation of your camera shows you're actually half a mile away! I need to work in 3D spaces more to understand the axes more. </p>
+    </section>
+</body>
+
+</html>
