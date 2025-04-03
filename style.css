@@ -16,12 +16,17 @@
 |================================================================================| 
 */
 
-p{
+p, li{
     font-size: 1.6rem;
 }
 
 li{
     list-style-position: inside;
+}
+
+
+nav li{
+    list-style-type: none;
 }
 
 section{
@@ -87,6 +92,10 @@ nav a:hover{
     text-transform: capitalize;
 }
 
+.mobile{
+    display: none;
+}
+
 /* 
 |================================================================================|
 |                                                                                |
@@ -97,4 +106,29 @@ nav a:hover{
 
 .carousel-caption-ammend {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (orientation: portrait) {
+
+    header h1{
+        font-size: 30px;
+    }
+
+    header h2{
+        font-size: 18px;
+    }
+
+    .carousel-caption{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+
 }
